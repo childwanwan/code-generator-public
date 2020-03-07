@@ -3,7 +3,9 @@
 
 
 此代码生成器可以生成基本后台的增删改查。
+
 因所有框架不一致，可能读者所需要生成的代码模板与此代码生成器不符，可修改文件resource下的tetemplates下的模板文件；
+
 如果不会ftl 模板的 可联系本人进行代码处理
 
 本代码生成器尚存在的问题：
@@ -26,6 +28,7 @@
 4、运行CodeGenerator生成代码
 
 5、运行DemoApplication（如果报错，可自行查看springboot所配置包是否有问题，如果出现其他问题，可联系本人进行处理）
+
 ![image](https://github.com/childwanwan/code-generator-public/blob/master/images/tables.jpg)
 ![image](https://github.com/childwanwan/code-generator-public/blob/master/images/jdbc.jpg)
 
