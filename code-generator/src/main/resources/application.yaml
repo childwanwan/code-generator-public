@@ -1,0 +1,44 @@
+server:
+  port: 8880
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 1234
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+# mybatis 别名扫描
+mybatis.type-aliases-package: com.wanpp.**.entity
+# mapper.xml文件位置,如果没有映射文件，请注释掉
+mybatis.mapper-locations: classpath:/mapper/**.xml
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#logging:
+#  level:
+#    com:
+#      wanpp:
+#        user:
+#          mapper: debug
+
+
+swagger:
+  ui:
+    title: swagger接口Api文档
+    description: Wsg层暴露Api
+    termsOfServiceUrl: www.baidu.com
+    contact:
+      name: wanpp
+      url: www.baidu.com
+      email: 1635679119@qq.com
+    version: 1.0
