@@ -2,6 +2,7 @@ package ${package.Controller};
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import ${package.Service}.${table.serviceName};
 import ${cfg.dtopackage}.dto.${entity}DTO;
 import com.wanpp.utils.ReturnCodeData;
@@ -84,8 +85,9 @@ public class ${table.controllerName} {
             Page page = PageHelper.startPage(currentPage, pageSize);
             //执行
             List<${entity}DTO> resultDTOList = ${serviceName ?uncap_first}.selectFuzzyByDto(paramsDTO);
-            data.put("data",resultDTOList);
-            data.put("page", JSONObject.parse(JSONObject.toJSONString(page)));
+            PageInfo<${entity}DTO> pageInfo = page.toPageInfo();
+            pageInfo.setList(resultDTOList);
+            data.put("data",pageInfo);
             data.put("msg", "列表分页模糊查询成功");
             data.put("code", ReturnCodeData.SUCCESS);
         } catch (Exception e) {
@@ -123,8 +125,9 @@ public class ${table.controllerName} {
             Page page = PageHelper.startPage(currentPage, pageSize);
             //执行
             List<${entity}DTO> resultDTOList = ${serviceName ?uncap_first}.selectFuzzyByDto(paramsDTO);
-            data.put("data",resultDTOList);
-            data.put("page", JSONObject.parse(JSONObject.toJSONString(page)));
+            PageInfo<${entity}DTO> pageInfo = page.toPageInfo();
+            pageInfo.setList(resultDTOList);
+            data.put("data",pageInfo);
             data.put("msg", "列表分页查询成功");
             data.put("code", ReturnCodeData.SUCCESS);
         } catch (Exception e) {
