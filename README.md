@@ -17,6 +17,8 @@
 1、导入maven依赖
 2、在application.yml和CodeGenerator中设置好需要连接的数据库(此数据库版本为8以上，如果是老版本，需要把驱动器设置成老版本的驱动器)
 3、在CodeGenerator中设置好需要文件生成的模块和表名，截图如下
-![image]()
 4、运行CodeGenerator生成代码
 5、运行DemoApplication（如果报错，可自行查看springboot所配置包是否有问题，如果出现其他问题，可联系本人进行处理）
+![image](https://github.com/childwanwan/code-generator-public/blob/master/images/tables.jpg)
+![image](https://github.com/childwanwan/code-generator-public/blob/master/images/jdbc.jpg)
+
