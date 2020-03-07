@@ -32,3 +32,7 @@
 ![image](https://github.com/childwanwan/code-generator-public/blob/master/images/tables.jpg)
 ![image](https://github.com/childwanwan/code-generator-public/blob/master/images/jdbc.jpg)
 
+本人微信如下，欢迎赞助联系
+
+![image](https://github.com/childwanwan/code-generator-public/blob/master/images/author.PNG)
+
