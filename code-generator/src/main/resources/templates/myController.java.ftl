@@ -163,7 +163,7 @@ public class ${table.controllerName} {
             data.put("code", ReturnCodeData.SUCCESS);
         } catch (Exception e) {
             log.error("执行 数据插入 异常，异常信息为：" + JSON.toJSONString(e));
-            data.put("msg", "数据插入异常");
+            data.put("msg", e.toString());
             data.put("code", ReturnCodeData.FAIL);
         }
         log.info("执行 数据插入完成，准备返回的结果为：" + JSON.toJSONString(data));
