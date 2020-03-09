@@ -11,25 +11,25 @@ spring:
       maximum-pool-size: 30
       minimum-idle: 10
 # mybatis 别名扫描
-mybatis.type-aliases-package: com.wanpp.**.entity
+#mybatis.type-aliases-package: com.wanpp.**.entity
 # mapper.xml文件位置,如果没有映射文件，请注释掉
-mybatis.mapper-locations: classpath:/mapper/**.xml
-mybatis:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    map-underscore-to-camel-case: true
+#mybatis.mapper-locations: classpath:/mapper/**.xml
+#mybatis:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    map-underscore-to-camel-case: true
 
-mybatis-plus:
-  mapper-locations: classpath:mapper/**/*.xml
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#mybatis-plus:
+#  mapper-locations: classpath:mapper/**/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 #logging:
 #  level:
 #    com:
 #      wanpp:
-#        user:
-#          mapper: debug
+#        mapper: debug
+#          user: debug
 
 
 swagger:

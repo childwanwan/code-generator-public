@@ -14,8 +14,8 @@ import java.util.*;
 public class CodeGenerator {
 
     public static void main(String[] args) {
-        //模块名
-        String moduleNameArray[] = {"user","dataMain"};
+        //模块名,如果一致则生成在同一级目录下，建议一致
+        String moduleNameArray[] = {"test","test"};
 
         //表名,注意需要与模块名对应
         String tableNameArray[] = {"user","data_main"};
